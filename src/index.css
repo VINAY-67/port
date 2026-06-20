@@ -1,0 +1,135 @@
+/* Fonts loaded via <link> in index.html */
+
+@import "tailwindcss";
+
+@theme {
+  /* ─── Colors ──────────────────────────────────────────────── */
+  --color-surface:               #fdf8f8;
+  --color-surface-dim:           #ddd9d8;
+  --color-surface-low:           #f7f3f2;
+  --color-surface-high:          #e5e2e1;
+  --color-on-surface:            #1c1b1b;
+  --color-on-surface-muted:      #444748;
+  --color-outline:               #747878;
+
+  --color-lime:                  #c8f232;
+  --color-lime-dark:             #add500;
+  --color-purple:                #bc87fe;
+  --color-black:                 #1c1b1b;
+  --color-white:                 #fdf8f8;
+
+  /* ─── Typography ──────────────────────────────────────────── */
+  --font-display:    "Montserrat",     sans-serif;
+  --font-body:       "Hanken Grotesk", sans-serif;
+  --font-label:      "Hanken Grotesk", sans-serif;
+}
+
+/* ─── Material Symbols ────────────────────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-family: "Material Symbols Outlined";
+  user-select: none;
+}
+
+/* ─── Reset & Base ────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #fdf8f8;
+  color: #1c1b1b;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #c8f232;
+  color: #1c1b1b;
+}
+
+img { display: block; }
+
+/* ─── Font utilities ──────────────────────────────────────── */
+.font-display    { font-family: "Montserrat",     sans-serif; }
+.font-body-lg    { font-family: "Hanken Grotesk", sans-serif; }
+.font-body-md    { font-family: "Hanken Grotesk", sans-serif; }
+.font-label-bold { font-family: "Hanken Grotesk", sans-serif; }
+
+/* ─── Neo-Brutalist shadow system ────────────────────────── */
+.shadow-brutal-xs  { box-shadow: 2px 2px 0px 0px #1c1b1b; }
+.shadow-brutal-sm  { box-shadow: 4px 4px 0px 0px #1c1b1b; }
+.shadow-brutal-md  { box-shadow: 6px 6px 0px 0px #1c1b1b; }
+.shadow-brutal-lg  { box-shadow: 8px 8px 0px 0px #1c1b1b; }
+.shadow-brutal-xl  { box-shadow: 10px 10px 0px 0px #1c1b1b; }
+.shadow-brutal-2xl { box-shadow: 12px 12px 0px 0px #1c1b1b; }
+
+/* Press — element presses into shadow on hover */
+.press {
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.press:hover {
+  transform: translate(4px, 4px);
+  box-shadow: none !important;
+}
+
+/* ─── Stroke text ─────────────────────────────────────────── */
+.stroke-text {
+  -webkit-text-stroke: 4px #1c1b1b;
+  color: transparent;
+}
+.stroke-text-sm {
+  -webkit-text-stroke: 2px #1c1b1b;
+  color: transparent;
+}
+
+/* ─── Spinning star (decorative) ─────────────────────────── */
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-slow-spin {
+  animation: slowSpin 12s linear infinite;
+}
+
+/* ─── Marquee ticker ──────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+.animate-marquee-fast {
+  animation: marquee 10s linear infinite;
+  will-change: transform;
+}
+
+/* ─── Focus ring (accessibility) ─────────────────────────── */
+:focus-visible {
+  outline: 3px solid #c8f232;
+  outline-offset: 2px;
+}
+
+/* ─── Form inputs — brutalist style ──────────────────────── */
+.brutal-input {
+  width: 100%;
+  background: #ffffff;
+  border: 4px solid #1c1b1b;
+  padding: 14px 16px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 700;
+  color: #1c1b1b;
+  box-shadow: 4px 4px 0px #1c1b1b;
+  transition: box-shadow 0.12s ease, transform 0.12s ease;
+  outline: none;
+  resize: none;
+}
+.brutal-input::placeholder { color: #747878; }
+.brutal-input:focus {
+  box-shadow: 6px 6px 0px #c8f232;
+  transform: translate(-1px, -1px);
+}
