@@ -3,6 +3,17 @@
 @import "tailwindcss";
 
 @theme {
+  --font-clash: "clash";
+}
+
+@font-face {
+  font-family: "clash";
+  src: url("/clash.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
   /* ─── Colors ──────────────────────────────────────────────── */
   --color-surface:               #fdf8f8;
   --color-surface-dim:           #ddd9d8;

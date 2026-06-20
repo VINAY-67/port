@@ -153,7 +153,7 @@ export default function Story() {
             className="self-end bg-[#bc87fe] border-4 border-[#1c1b1b] px-5 py-2 shadow-[5px_5px_0px_#1c1b1b]"
             style={{ rotate: "2deg" }}
           >
-            <span className="font-label-bold text-xs uppercase tracking-widest text-[#1c1b1b]">
+            <span className="font-clash text-xs uppercase tracking-widest text-[#1c1b1b]">
               {item.period}
             </span>
           </div>
@@ -171,7 +171,7 @@ export default function Story() {
             <h3 ref={titleRef} className="font-display text-3xl md:text-4xl uppercase font-black mb-4 text-[#c8f232]">
               {item.title}
             </h3>
-            <p ref={bodyRef} className="font-body-lg text-base font-bold leading-7 text-[#e5e2e1]">
+            <p ref={bodyRef} className="font-clash text-base font-bold leading-7 text-[#e5e2e1]">
               {item.body}
             </p>
           </div>

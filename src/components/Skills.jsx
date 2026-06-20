@@ -101,12 +101,15 @@ export default function Skills() {
                 {skill.title}
               </h4>
               <ul className="font-label-bold uppercase space-y-4 text-[#1c1b1b]">
-                {skill.items.map((item) => (
-                  <li key={item.label} className="flex items-center gap-3 text-sm">
-                    <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
-                    {item.label}
-                  </li>
-                ))}
+{skill.items.map(({ icon: Icon, label }) => (
+  <li
+    key={label}
+    className="flex items-center gap-3 text-sm"
+  >
+    <Icon className="text-[20px]" />
+    {label}
+  </li>
+))}
               </ul>
             </div>
           ))}

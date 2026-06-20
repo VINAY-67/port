@@ -112,36 +112,84 @@ export const story = {
   body: "Digital architect pushing pixels and code to their absolute limits. I don't just build interfaces; I engineer experiences that demand attention and refuse to be ignored. My journey is defined by raw creativity and structured execution.",
 };
 
+
 // Skills
+import {
+  Gauge,
+  Orbit,
+  Database,
+  Terminal,
+  Rocket,
+  Bot,
+} from "lucide-react";
+
+import {
+  FaPaintBrush,
+  FaReact,
+  FaNodeJs,
+  FaFigma,
+  FaGitAlt,
+} from "react-icons/fa";
+
+import {
+  SiTailwindcss,
+  SiFirebase,
+  SiSupabase,
+} from "react-icons/si";
+
+import { PiSparkleFill } from "react-icons/pi";
+import { TbVectorBezier, TbApi } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
+
 export const skills = [
   {
     id: "design",
     title: "Design",
     cardBg: "bg-[#eedbff]",
     items: [
-      { icon: "brush", label: "Advanced UI/UX" },
-      { icon: "animation", label: "Motion Design" },
-      { icon: "architecture", label: "Design Systems" },
+      { icon: FaPaintBrush, label: "UI/UX Design" },
+      { icon: PiSparkleFill, label: "Motion Design" },
+      { icon: TbVectorBezier, label: "Stitch" },
     ],
   },
+
   {
     id: "frontend",
     title: "Frontend",
     cardBg: "bg-[#e5e2e1]",
     items: [
-      { icon: "code", label: "React / Next.js" },
-      { icon: "css", label: "Tailwind CSS" },
-      { icon: "speed", label: "Performance Optimization" },
+      { icon: FaReact, label: "React.js" },
+      { icon: SiTailwindcss, label: "Tailwind CSS" },
+      { icon: Gauge, label: "Performance Optimization" },
+      { icon: Orbit, label: "GSAP" },
     ],
   },
+
+  {
+    id: "backend",
+    title: "Backend",
+    cardBg: "bg-[#FFFB2B]",
+    items: [
+      { icon: FaNodeJs, label: "Node.js" },
+      { icon: TbApi, label: "Express.js" },
+      { icon: Database, label: "MongoDB" },
+      { icon: SiFirebase, label: "Firebase" },
+      { icon: SiSupabase, label: "Supabase" },
+      { icon: TbApi, label: "REST API" },
+    ],
+  },
+
   {
     id: "tools",
     title: "Tools",
     cardBg: "bg-[#ffdad6]",
     items: [
-      { icon: "design_services", label: "Figma" },
-      { icon: "account_tree", label: "Git / CI/CD" },
-      { icon: "terminal", label: "Webpack / Vite" },
+      { icon: FaFigma, label: "Figma" },
+      { icon: FaGitAlt, label: "Git" },
+      { icon: Terminal, label: "Webpack / Vite / Linux" },
+      { icon: VscVscode, label: "VS Code" },
+      { icon: Rocket, label: "AntiGravity" },
+      { icon: Bot, label: "OpenCode / Claude Code / OpenDesign" },
     ],
   },
 ];

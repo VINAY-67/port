@@ -284,7 +284,7 @@ export default function Projects() {
                 <div
                   className={`absolute bottom-4 ${isLeft ? "left-4" : "right-4"} ${accentBg} border-2 border-[#1c1b1b] px-3 py-1`}
                 >
-                  <span className="font-label-bold text-[10px] uppercase tracking-widest text-[#1c1b1b]">
+                  <span className="font-clash text-[13px] uppercase tracking-widest text-[#1c1b1b]">
                     {project.category}
                   </span>
                 </div>
@@ -314,7 +314,7 @@ export default function Projects() {
                   </h3>
                   {/* Thick underline accent */}
                   <div className={`w-10 h-1 ${accentBg} mb-4`} />
-                  <p className="font-body-md text-[#a09f9e] leading-relaxed text-sm md:text-base">
+                  <p className="font-clash text-[#a09f9e] leading-relaxed text-sm md:text-base">
                     {project.description}
                   </p>
                 </div>
@@ -324,7 +324,7 @@ export default function Projects() {
                   className={`proj-tech ${accentBg} border-4 border-[#1c1b1b] p-5 shadow-[6px_6px_0px_#1c1b1b] self-start`}
                   style={{ rotate: isLeft ? "2deg" : "-2deg" }}
                 >
-                  <h4 className="font-label-bold uppercase text-xs border-b-2 border-[#1c1b1b] mb-3 pb-1 text-[#1c1b1b]">
+                  <h4 className="font-clash font-bold uppercase text-xs border-b-2 border-[#1c1b1b] mb-3 pb-1 text-[#1c1b1b]">
                     Tech Stack
                   </h4>
                   <ul className="flex flex-wrap gap-2">
@@ -343,7 +343,7 @@ export default function Projects() {
                 <div className="proj-cta">
                   <a
                     href={project.link}
-                    className={`inline-flex items-center gap-3 font-label-bold uppercase text-sm ${accentBg} text-[#1c1b1b] border-4 border-[#1c1b1b] px-6 py-3 shadow-[5px_5px_0px_#1c1b1b] hover:shadow-[8px_8px_0px_#1c1b1b] hover:-translate-y-1 hover:-translate-x-0.5 transition-all duration-200`}
+                    className={`inline-flex font-clash items-center gap-3 font-label-bold uppercase text-sm ${accentBg} text-[#1c1b1b] border-4 border-[#1c1b1b] px-6 py-3 shadow-[5px_5px_0px_#1c1b1b] hover:shadow-[8px_8px_0px_#1c1b1b] hover:-translate-y-1 hover:-translate-x-0.5 transition-all duration-200`}
                   >
                     View Project
                     <ArrowUpRight size={16} />
