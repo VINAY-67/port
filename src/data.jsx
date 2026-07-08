@@ -216,7 +216,7 @@ export const projects = [
       "A comprehensive design system built for a next-generation fintech platform. Focused on accessibility, scalability, and a cohesive visual language across multiple digital touchpoints.",
     techStack: ["React.js", "Tailwind", "Framer Motion","GSAP","Express.js","MongoDB"],
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBXbTS2tZnHyzRgkf0EnM65gst5ARpaM1HZnuzoNSZUuCY4UzqtbXCfgjizKnpL6wqxOrw1hrsPtcbPDxQ_wg5mUeEsCAkK68rpbYWC6c4RVmDI0qSIMDx8ehMxQFM-gMiP3TW4TM_BGLmBM_vpi5YiNw7ibaJ5hmeOuk6jrK_JqU79VpwC2zDY2oFxnt7Q29yuAMT9sMknOUqfqEJ8Sm9ld3CKS-tKE0aMbuycb_NoRboseWs4kT2vNEjn7SJISHqcWGz8p8QITtQ",
+      "/crescence.png",
     imageAlt: "Project Alpha",
     stackCardBg: "bg-[#c8f232]",
     link: "https://www.cresence.in/",
@@ -232,6 +232,19 @@ export const projects = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD4dY37D0430YHy8MjkKlUBzvi_uzPJ5GrSSy0HMx7GJaarnSTdINNuqwf8kor7YYgk9Fj8xqVqajs9Bs1KsRvN4eRTigKQVSOyPX_3qjQSjHDrWSEd3gNaPKuTo1rwHG1jTpWw8EUEI5snbpJcgm_SUpfXL6ryvI4H77hwekT1il0Wpn5p8EfompBxzCDzj8_Et9EQSn7mt95AvV46F62LMczMIPUeKi9LZs4qeeQxc5VtLT3tBm32Zuk2eoN2KLiu5rR0VMkegbc",
     imageAlt: "Digital Frontier",
     stackCardBg: "bg-[#fdf8f8]",
+    link: "https://sis.jntugvcev.in/",
+  },
+  {
+    id: "digital-frontier",
+    title: "Student Info System",
+    category: "Backend Dev",
+    description:
+      "A system that was designed to share te information aong the student and benifiting to the University , this is a university project seeking the better future and resume/bio data generation",
+    techStack: ["REST API", "Express.js" , "MongoDB","Self Hosting"],
+    imageUrl:
+      "/sis.png",
+    imageAlt: "Digital Frontier",
+    stackCardBg: "bg-[#fdf8f8]",
     link: "https://facultyinfosys.jntugvcev.in/",
   },
   {
@@ -242,17 +255,17 @@ export const projects = [
       "A high-performance mobile application for real-time data visualization. Complex interactive charts and a seamless UX optimised for low-latency environments.",
     techStack: ["React.js", "GSAp", "Firebase","Express.js","MongoDB","Local LLM"],
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDSOH6RtmImXWcqrH1RW-QkZXGl2_Cs92LNhlK5_oQc8t6pEVjtxr-QLKRYubDKEIGeqsH676A_xPhjV6mX2SVm2YUUP5Yuun5DSkgC9OA12a1Q7wVIqsuG4VxkKm3EVg46MsyqaKZ3nfNdi60B4zBHIMRnl4q_Vq_BGphvDGHH0rkpTOLWVZsNmo6WWfvmufo9Kq1kOUP-p9Fj31jnb_fE5p_7vtvxwNZJl8kbZUdu9baDH38n1DqxLDOyGiwv5Ur8qP8B-VBwYxg",
+      "/preu.png",
     imageAlt: "NexGen App",
     stackCardBg: "bg-[#c8f232]",
-    link: "#",
+    link: "https://preu-own.vercel.app/",
   },
 ];
 
 // Footer links
 export const footerLinks = [
-  { label: "LinkedIn", href: "#", icon: "link" },
-  { label: "GitHub", href: "#", icon: "code" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/vinay-siringi-130633307", icon: "link" },
+  { label: "GitHub", href: "https://github.com/VINAY-67", icon: "code" },
   { label: "Dribbble", href: "#", icon: "palette" },
   { label: "Read.cv", href: "#", icon: "description" },
 ];
